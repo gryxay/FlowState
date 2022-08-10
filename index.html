@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <title>Flow State</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="media/logoBlack.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+    <div id="main">
+        <header id="header-desktop">
+            <nav>
+                <img src="media/logo.png" id="logo" alt="logo" />
+                <ul>
+                    <li><a href="gallery.html">Galerija</a></li>
+                    <li><a href="contacts.html">Kontaktai</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <header id="header-mobile">
+            <nav>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                
+                    <ul class="menu__box">
+                      <li><a class="menu__item" href="gallery.html">Galerija</a></li>
+                      <li><a class="menu__item" href="contacts.html">Kontaktai</a></li>
+                    </ul>
+                  </div>
+
+                  <img src="media/logo.png" id="logo" alt="logo" />
+            </nav>
+        </header>
+        </div>
+
+        <div id="banner">
+            <div class="vc hc">
+                <h1>Flow State Žirgynas</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div id="about" class="hc" name="about">
+            <div class="hc">
+                <h2>Apie mus</h2>
+                <p>Flow State žirgynas - naujai įsikūręs žirygnas netoli Vilniaus, Rūkainių seniūnijoje.</p>
+            </div>
+            <hr>
+        </div>
+        <div>
+            <h2>Paslaugos</h2>
+            <div id="services">
+                <div class="service">
+                    <i class="far fa-check-circle fa-4x"></i>
+                    <div class="services-description">
+                        <h3>Gardų nuoma</h3>
+                    </div>
+                </div>
+                <div class="service">
+                    <i class="far fa-check-circle fa-4x"></i>
+                    <div class="services-description">
+                        <h3>Jojimo pamokos</h3>
+                    </div>
+                </div>
+                <div class="service">
+                    <i class="far fa-check-circle fa-4x"></i>
+                    <div class="services-description">
+                        <h3>Vieta fotosesijoms</h3>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div id="footer">
+            <hr class="full">
+            <div>
+                <i class="fas fa-copyright"></i>
+                <h4>Flow State Žirgynas</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102443929247198");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</body>
+</html>
