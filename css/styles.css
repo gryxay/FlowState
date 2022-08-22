@@ -180,22 +180,53 @@ a {
     font-weight: 600;
 }
 
-#pictures {
+#pictures, #horses {
+    width: 90%;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 2vh 0;
 }
 
+.horse {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40vw;
+}
+
+.horse img {
+    width: 100%;
+}
+
+.horse h3 {
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #dfdfdf;
+}
+
+#horses h2, #pictures h2 {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 2rem;
+}
+
 img {
-    width: 40%;
+    width: 40vw;
     margin: auto;
-    padding-top: 80px;
+    margin-top: 80px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1100px) {
     img {
-        width: 80%;
+        width: 80vw;
+    }
+
+    .horse {
+        width: 80vw;
     }
 }
 
