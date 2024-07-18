@@ -1,0 +1,64 @@
+#services {
+    width: 100%;
+    padding: 2rem 1rem;
+    color: var(--flowstate-text-primary);
+}
+
+#services h2 {
+    margin: 2rem 0;
+}
+
+#services-container {
+    width: 100%;
+    gap: 1.75rem;
+    padding: 1rem 0;
+}
+
+#services h2 {
+    font-family: "Cinzel", serif;
+}
+
+.service {
+    width: 20%;
+    text-align: center;
+}
+
+.service h5 {
+    font-weight: 400;
+    color: var(--flowstate-text-secondary);
+}
+
+.hr-primary {
+    display: none;
+    width: 80%;
+    margin-top: 2rem;
+    color: var(--flowstate-text-secondary);
+}
+
+@media screen and (min-width: 950px) {
+    .service:nth-of-type(2) {
+        position: relative;
+        top: -2.25rem;
+    }
+    
+    .service:not(:nth-of-type(2)) {
+        position: relative;
+        bottom: -2.25rem;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 949px) {
+    .service {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #services-container {
+        flex-direction: column !important;
+    }
+
+    .service {
+        width: 90%;
+    }
+}

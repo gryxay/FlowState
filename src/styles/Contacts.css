@@ -1,0 +1,57 @@
+#contacts {
+    height: 85vh;
+    padding: 2rem;
+}
+
+#contacts a {
+    text-decoration: none;
+    color: var(--flowstate-text-primary);
+    display: inline-block;
+    transition: color 500ms ease-in-out, transform 300ms ease-in-out;
+}
+
+#contacts .contact {
+    transition: all 500ms ease-in-out;
+}
+
+#contacts .contact:hover a {
+    color: var(--flowstate-text-secondary);
+    transform: scale(1.05);
+}
+
+#contacts h2 {
+    font-family: "Cinzel", serif;
+}
+
+#contacts h4 {
+    margin-left: 1rem;
+}
+
+#contact-container {
+    height: 20%;
+}
+
+#map {
+    height: 70%;
+    width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+    #contacts {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #contact-container {
+        height: 15%;
+    }
+
+    #map {
+        width: 90%;
+        height: 60%;
+    }
+
+    .hr-primary {
+        display: block;
+    }
+}

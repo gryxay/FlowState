@@ -1,0 +1,26 @@
+#header {
+    background-color: var(--flowstate-green) !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    opacity: 0.7;
+    transition: opacity 300ms ease-in-out;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    color: var(--flowstate-white) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--flowstate-white) !important;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-link:not(:last-of-type):after {
+        content: '|';
+        margin-left: 1rem;
+    }
+}

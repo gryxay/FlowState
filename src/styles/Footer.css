@@ -1,0 +1,9 @@
+#footer {
+    background-color: var(--flowstate-green);
+    color: var(--flowstate-white);
+    padding: 1rem;
+}
+
+#footer h6 {
+    font-family: "Cinzel", serif;
+}

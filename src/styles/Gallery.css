@@ -1,0 +1,29 @@
+#gallery {
+    width: 100%;
+    padding: 1rem .75rem;
+    background-color: var(--flowstate-green);
+    color: var(--flowstate-white);
+}
+
+#gallery h2 {
+    font-family: "Cinzel", serif;
+}
+
+.carousel {
+    width: 80vw;
+}
+
+.carousel-image, .carousel-item, .active, .carousel-item-start, .carousel-item-next {
+    max-height: 85vh;
+    max-width: 80vw;
+}
+
+@media screen and (max-width: 1100px) {
+    #gallery {
+        flex-direction: column !important;
+    }
+
+    #gallery h2 {
+        margin-bottom: 2rem;
+    }
+}
